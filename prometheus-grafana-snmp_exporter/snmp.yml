@@ -1,0 +1,78 @@
+auths:
+  public_v2:
+    community: public
+    version: 1
+
+modules:
+  arduino:
+    walk:
+      - 1.3.6.1.4.1.36582.2.1.1.3.1     # temperatura
+      - 1.3.6.1.4.1.36582.2.1.1.3.2     # capacitivo
+      - 1.3.6.1.4.1.36582.2.1.1.3.3     # sensor 3 valor
+      - 1.3.6.1.4.1.36582.2.1.1.3.4     # accesos web
+      - 1.3.6.1.4.1.36582.2.1.1.3.5     # humedad suelo
+      - 1.3.6.1.4.1.36582.2.1.1.3.6     # ram disponible
+      - 1.3.6.1.4.1.36582.2.1.1.3.7     # sonido 1
+      - 1.3.6.1.4.1.36582.2.1.1.3.8     # sonido 2
+      - 1.3.6.1.4.1.36582.4.1.1.4.1     # carga cpu s1
+      - 1.3.6.1.4.1.36582.4.1.1.4.2     # carga cpu s2
+      - 1.3.6.1.4.1.36582.4.1.1.5.1     # conexiones tcp s1
+      - 1.3.6.1.4.1.36582.4.1.1.5.2     # conexiones tcp s2
+      - 1.3.6.1.4.1.36582.5.1.1.7.1     # R1 bytes entrantes
+      - 1.3.6.1.4.1.36582.5.1.1.7.2     # R2 bytes entrantes
+      - 1.3.6.1.4.1.36582.5.1.1.7.3     # R3 bytes entrantes
+      - 1.3.6.1.4.1.36582.5.1.1.7.4     # R4 bytes entrantes
+      - 1.3.6.1.4.1.36582.5.1.1.7.5     # R5 bytes entrantes
+
+    metrics:
+      - name: temperatura
+        oid: 1.3.6.1.4.1.36582.2.1.1.3.1
+        type: gauge
+      - name: capacitivo
+        oid: 1.3.6.1.4.1.36582.2.1.1.3.2
+        type: gauge
+      - name: valor_sensor_3
+        oid: 1.3.6.1.4.1.36582.2.1.1.3.3
+        type: gauge
+      - name: accesos_web
+        oid: 1.3.6.1.4.1.36582.2.1.1.3.4
+        type: counter
+      - name: humedad_suelo
+        oid: 1.3.6.1.4.1.36582.2.1.1.3.5
+        type: gauge
+      - name: ram_disponible
+        oid: 1.3.6.1.4.1.36582.2.1.1.3.6
+        type: gauge
+      - name: sonido_1
+        oid: 1.3.6.1.4.1.36582.2.1.1.3.7
+        type: gauge
+      - name: sonido_2
+        oid: 1.3.6.1.4.1.36582.2.1.1.3.8
+        type: gauge
+      - name: carga_cpu_servidor_1
+        oid: 1.3.6.1.4.1.36582.4.1.1.4.1
+        type: gauge
+      - name: carga_cpu_servidor_2
+        oid: 1.3.6.1.4.1.36582.4.1.1.4.2
+        type: gauge
+      - name: conexiones_tcp_servidor_1
+        oid: 1.3.6.1.4.1.36582.4.1.1.5.1
+        type: gauge
+      - name: conexiones_tcp_servidor_2
+        oid: 1.3.6.1.4.1.36582.4.1.1.5.2
+        type: gauge
+      - name: bytes_entrantes_R1
+        oid: 1.3.6.1.4.1.36582.5.1.1.7.1
+        type: counter
+      - name: bytes_entrantes_R2
+        oid: 1.3.6.1.4.1.36582.5.1.1.7.2
+        type: counter
+      - name: bytes_entrantes_R3
+        oid: 1.3.6.1.4.1.36582.5.1.1.7.3
+        type: counter
+      - name: bytes_entrantes_R4
+        oid: 1.3.6.1.4.1.36582.5.1.1.7.4
+        type: counter
+      - name: bytes_entrantes_R5
+        oid: 1.3.6.1.4.1.36582.5.1.1.7.5
+        type: counter

@@ -1,0 +1,28 @@
+global:
+  scrape_interval: 30s
+  evaluation_interval: 30s
+  scrape_timeout: 30s   # Aumenta el timeout global por defecto (opcional)
+
+# rule_files:
+#   - "first.rules"
+#   - "second.rules"
+
+scrape_configs:
+  - job_name: prometheus
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: arduino_snmp
+    scrape_timeout: 30s     # Timeout específico para este job, puede sobrescribir el global
+    metrics_path: /snmp
+    params:
+      module:
+        - arduino  # Debe coincidir con el módulo en snmp.yml
+    static_configs:
+      - targets:
+          - 192.168.1.74
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+      - target_label: __address__
+        replacement: 192.168.1.93:9116  # Dirección del SNMP Exporter

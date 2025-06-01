@@ -1,0 +1,10 @@
+/home/dit/TFGExternas/JS/src/main/java/com/example/snmpmanager/repository/NetworkNodesRepository.java
+/home/dit/TFGExternas/JS/src/main/java/com/example/snmpmanager/controller/BGPInfoController.java
+/home/dit/TFGExternas/JS/src/main/java/com/example/snmpmanager/controller/NetworkNodesController.java
+/home/dit/TFGExternas/JS/src/main/java/com/example/snmpmanager/SnmpManagerApplication.java
+/home/dit/TFGExternas/JS/src/main/java/com/example/snmpmanager/repository/BGPInfoRepository.java
+/home/dit/TFGExternas/JS/src/main/java/com/example/snmpmanager/model/NetworkNodes.java
+/home/dit/TFGExternas/JS/src/main/java/com/example/snmpmanager/repository/ServersRepository.java
+/home/dit/TFGExternas/JS/src/main/java/com/example/snmpmanager/model/BGPInfo.java
+/home/dit/TFGExternas/JS/src/main/java/com/example/snmpmanager/controller/ServersController.java
+/home/dit/TFGExternas/JS/src/main/java/com/example/snmpmanager/model/Servers.java

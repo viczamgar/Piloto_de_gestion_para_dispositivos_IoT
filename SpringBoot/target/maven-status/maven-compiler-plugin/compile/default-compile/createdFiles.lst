@@ -1,0 +1,10 @@
+com/example/snmpmanager/repository/ServersRepository.class
+com/example/snmpmanager/model/Servers.class
+com/example/snmpmanager/repository/BGPInfoRepository.class
+com/example/snmpmanager/controller/NetworkNodesController.class
+com/example/snmpmanager/model/NetworkNodes.class
+com/example/snmpmanager/controller/ServersController.class
+com/example/snmpmanager/SnmpManagerApplication.class
+com/example/snmpmanager/repository/NetworkNodesRepository.class
+com/example/snmpmanager/model/BGPInfo.class
+com/example/snmpmanager/controller/BGPInfoController.class
