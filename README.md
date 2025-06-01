@@ -1,2 +1,6 @@
-# TFG-Piloto-de-gestión-para-dispositivos-IoT
+# Piloto de gestión para dispositivos IoT
 Este Trabajo Fin de Grado abarca el desarrollo e implementación de un sistema de gestión para dispositivos IoT que permite, no solo la monitorización de sensores físicos y virtuales de uno de estos dispositivos, sino también la centralización de la información de gestión de dispositivos de red reales, como routers, switches y servidores. 
+
+    Para ello, el foco principal de atención recae sobre el protocolo de gestión tradicional SNMP, que constituye la base de este proyecto junto con uno de los principales protocolos de comunicación dedicados para dispositivos IoT, denominado MQTT.
+    
+    Además, cabe destacar el uso de herramientas como GNS3 para el desarrollo de un escenario de red simulado que permita ser gestionado por el sistema, PostgreSQL como servicio de bases de datos encargado de la persistencia de la información gestionada, Android Studio para la creación de una aplicación móvil que ejerza de interfaz de usuario principal, Spring Boot como framework para el desarrollo del backend intermediario entre la app y la base de datos y el stack de monitorización compuesto por Prometheus y Grafana como alternativa estándar y profesional de interfaz de usuario.
